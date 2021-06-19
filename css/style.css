@@ -2,6 +2,7 @@
     --bs-color : #3A3A3A;
     --primary  : #292929;
     --secondary: #fff;
+    --tertiary : #DA0037;
 }
 
 a:hover {
@@ -15,8 +16,8 @@ span {
 
 .--nic-checkbox:checked {
     background-color: var(--primary) !important;
-    color: #fff !important;
-    border-color: var(--primary) !important;
+    color           : #fff !important;
+    border-color    : var(--primary) !important;
 }
 
 .--nic-nav {
@@ -105,8 +106,18 @@ span {
     width           : 500px !important;
 }
 
-.--nic-modal h2 {
+.--nic-modal-aes img {
+    padding: 0;}
+.--nic-modal h1,
+h2,
+h3,
+h4,
+h5 {
     color: #fff !important;
+}
+
+.--nic-modal-sub-title {
+    font-size: 20px;
 }
 
 .--nic-box-shadow {
@@ -173,6 +184,7 @@ span {
     color           : var(--secondary);
 }
 
+
 .--nic-button-secondary {
     background-color: var(--secondary);
     color           : var(--primary);
@@ -189,6 +201,23 @@ span {
     background-color: #dfdfdf96;
     color           : var(--primary);
 }
+.--nic-button-aes {
+    background-color: var(--secondary);
+    color           : var(--primary);
+}
+
+.--nic-button-aes:hover,
+.--nic-button-aes:focus {
+    background-color: #000;
+    color           : #fff;
+}
+
+.--nic-button-aes:active,
+.--nic-button-aes.--nic-active {
+    background-color: #000;
+    color           : #fff;
+}
+
 
 .--nic-button-icon {
     background-color: var(--secondary);
@@ -412,4 +441,60 @@ span {
 .--nic-info-bold {
     font-size: bolder;
     font-size: 36px;
+}
+
+
+.--nic-order-info {
+    border-bottom: 7px solid #000;
+}
+
+.--nic-order-info label {
+    font-size  : 64px;
+    font-style : italic;
+    color      : #000;
+    font-weight: bold;
+}
+
+.--nic-order-info.--nic-confirmed {
+    font-size  : 64px;
+    color      : #000 !important;
+    font-weight: bold;
+}
+
+.--nic-confirmed-info {
+    color    : #000 !important;
+    font-size: 30px;
+    border   : none;
+}
+
+.--nic-confirmed-info p {
+    width : 50%;
+    margin: auto;
+}
+
+.--nic-input-group label {
+    font-weight: bold;
+    color      : #000;
+}
+
+.--nic-set-flex {
+    display: flex;
+}
+
+.--nic-payment-note {
+    border       : 1px solid var(--tertiary);
+    width        : 500px;
+    padding      : 50px;
+    border-radius: 20px;
+    margin       : auto !important;
+}
+
+.--nic-payment-note b {
+    font-size: 40px;
+    color    : var(--tertiary);
+}
+
+.--nic-title {
+    color: #000 !important;
+    font-size: 3rem;
 }
